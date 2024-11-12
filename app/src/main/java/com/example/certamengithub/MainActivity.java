@@ -35,11 +35,19 @@ public class MainActivity extends AppCompatActivity {
         int indice = sexos.indexOf(seleccion);
         String pesito = peso.getText().toString();
         String altito = altura.getText().toString();
-        String imc = altura.getText().toString();
         if(indice == 0 || pesito.isEmpty() || altito.isEmpty()){
             Toast.makeText(this, "No deben quedar campos vacíos", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "Hay datos", Toast.LENGTH_SHORT).show();
+            Double PesoNuevo = Double.parseDouble(pesito);
+            Double AlturaNueva = Double.parseDouble(altito)/100;
+            Double IMCNuevo = PesoNuevo/(AlturaNueva * AlturaNueva);
+            String imceo = String.valueOf(IMCNuevo);
+            String nuevoimc = imceo.substring(0,5);
+            imc.setText(nuevoimc);
         }
+    }
+    public void BajoPeso(){
+
     }
 }
