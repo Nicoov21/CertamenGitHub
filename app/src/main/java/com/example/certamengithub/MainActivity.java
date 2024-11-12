@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         sexos.add("Seleccione una opcion:");
         sexos.add("Femenino");
-        sexos.add("Masculinos");
+        sexos.add("Masculino");
         peso = findViewById(R.id.txtpeso);
         altura = findViewById(R.id.txtestatura);
         imc = findViewById(R.id.txtimc);
@@ -77,4 +77,6 @@ public class MainActivity extends AppCompatActivity {
         String mensaje = "Felicitaciones ud mantiene una excelente alimentacion.";
         area.setText(mensaje);
     }
+    //https://github.com/Nicoov21/CertamenGitHub.git
+    //Link github publico :O
 }
